@@ -1,6 +1,9 @@
 package model.bean;
 
 public class LoginBean {
+	
+	private String email;
+	private String password;
 	public String getEmail() {
 		return email;
 	}
@@ -13,14 +16,14 @@ public class LoginBean {
 	public void setPassword(String password) {
 		this.password = password;
 	}
-	private String email;
-	private String password;
+	public LoginBean() {
+		super();
+	}
 	public LoginBean(String email, String password) {
 		super();
 		this.email = email;
 		this.password = password;
 	}
-	public LoginBean() {
-		super();
-	}
+	
+	
 }
